@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/img/background.gif);
+  padding: 20px;
+  font-family: Times New Roman;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(219, 190, 195);
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Briana's Portfolio</h1>
+<hr>
+
+<h2>This personal blog will be about the four beings I love most in my life.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="/img/dog.gif" alt="dog" style="width:100%">
+      <h3>Max</h3>
+      <p>This is max. I've had him since I was 12 and I love him dearly. He is my child and I am sticking to it.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="/img/Nephew.gif" alt="Lights" style="width:100%">
+      <h3>Isaac</h3>
+      <p>This is Isaac my nephew and he is always up to something.There is never a bored moment and I love him so much.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="/img/Nephew2.gif" alt="Nature" style="width:100%">
+      <h3>Aiden</h3>
+      <p>This is aiden and he is the sweetest but if you say no he will just ignore you or fall over. He is the one making sure Isaac doesnt get into trouble.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="/img/Mother.gif" alt="Mountains" style="width:100%">
+      <h3>My Mother</h3>
+      <p>This is my beautiful mother Susana.She is the sweetest and I wouldn't change anything about her.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+
